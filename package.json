@@ -1,0 +1,11 @@
+{
+  "name": "2001",
+  "version": "0.0.1",
+  "main": "",
+  "scripts": {
+    "build": "npm run clear:fs; npm run prepare:fs; npm run build:static",
+    "build:static": "cp -r static/. dist/api; cp README.md dist/",
+    "clear:fs": "rm -rf dist",
+    "prepare:fs": "mkdir dist"
+  }
+}
